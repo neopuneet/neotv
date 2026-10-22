@@ -70,6 +70,12 @@ Scripts only run `pm disable-user` (reversible). They never touch Play Store, Go
 ```bash
 ./gradlew :app:assembleDebug
 adb install -r app/build/outputs/apk/debug/app-debug.apk
+
+Or after enabling USB debugging on the box:
+
+```bash
+./scripts/install.sh 192.168.1.14:5555
+```
 ```
 
 Requirements: JDK 17, Android SDK 35.
